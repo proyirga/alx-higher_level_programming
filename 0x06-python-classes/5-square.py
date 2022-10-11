@@ -2,12 +2,13 @@
 """A class that defines a square by size."""
 
 
+
 class Square:
-    """A square class"""
+    """Iniciate the  square class"""
 
     def __init__(self, size=0):
-        """Validate size is an integer and 
-        not less than zero
+        """Validate size is an integer
+        and is not less than zero
         """
 
         if not isinstance(size, int):
@@ -36,7 +37,7 @@ class Square:
         Calculate area of the square
         """
 
-        return (self.__size * self.__size)
+        return (self.__size ** 2)
 
     def my_print(self):
         """print the square in # """
@@ -46,5 +47,3 @@ class Square:
 
         for i in range(self.__size):
             print("#" * self.__size)
-
-
