@@ -4,9 +4,13 @@
 
 class Square:
     """Instantiation with optional size"""
+    
+
     def __init__(self, size = 0):
         """Validate size is an integer
         and not less than 0"""
+    
+
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
@@ -16,5 +20,7 @@ class Square:
 
     def area(self):
         """Returns area"""
+
+
         return (self.__size * self.__size)
 
