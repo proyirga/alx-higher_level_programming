@@ -22,4 +22,4 @@ class Square:
         Calculate area of the square
         """
 
-        return (self.__size ** self.__size)
+        return (self.__size * self.__size)
