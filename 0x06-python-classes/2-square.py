@@ -4,7 +4,7 @@ Private instance attribute: size"""
 
 
 class Square:
-    """A square class"""
+    """Initiate a square class"""
 
     def __init__(self, size=0):
         """Validates is size is an integer
