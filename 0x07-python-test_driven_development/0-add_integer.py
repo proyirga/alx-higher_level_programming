@@ -3,19 +3,14 @@
 which adds two integers."""
 
 
-def add_integer(a, b=98):
-    """adds 2 integers.
-    a and b must be integers or floats,
-    otherwise raise a TypeError exception 
-    with the message a must be an integer or b must be an integer
-    a and b must be first casted to integers if they are float
-
-    Return: an integer: the addition of a and b
-    """
-
-    if not isinstance(int, a) or not isinstance(int, b):
+def add_integer(a, b):
+    """Return the addition of two numbers."""
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    if not isinstance(float, a) or not isinstance(float, b):
+    if type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
-
-    return int(a) + int(b)
+    if type(a) is float:
+        a = int(a)
+    if type(b) is float:
+        b = int(b)
+    return a + b
