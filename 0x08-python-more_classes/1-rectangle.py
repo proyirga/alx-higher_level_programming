@@ -5,8 +5,8 @@ by hight and width
 
 
 class Rectangle:
-    """Instantiate an instance with defualt values
-    of width and height
+    """Instantiate an instance with 
+    defualt values of width and height
     """
     
     def __init__(self, width = 0, height = 0):
