@@ -6,10 +6,11 @@ class Rectangle:
     """Instantiate an instance with defualt values
     of width and height
     """
-
+    
+    
     def __init__(self, width = 0, height = 0):
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
     
     #set getter for width
     @property
@@ -25,7 +26,6 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-
 
     #set getter for height
     @property
