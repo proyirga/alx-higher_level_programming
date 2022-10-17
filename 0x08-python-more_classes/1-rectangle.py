@@ -7,19 +7,18 @@ class Rectangle:
     of width and height
     """
     
-    
     def __init__(self, width = 0, height = 0):
         self.width = width
         self.height = height
     
-    #set getter for width
     @property
     def width(self):
+        """set getter for width"""
         return self.__width
 
-    #set new value for width
     @width.setter
     def width(self, value):
+        """set new value for width"""
         if isinstance(value, int):
             self.__width = value
         else:
@@ -27,14 +26,14 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
 
-    #set getter for height
     @property
     def height(self):
+        """set getter for height"""
         return self.__height
     
-    #set new value for height
     @height.setter
     def height(self, value):
+        """set new value for height"""
         if isinstance(value, int):
             self.__height = value
         else:
