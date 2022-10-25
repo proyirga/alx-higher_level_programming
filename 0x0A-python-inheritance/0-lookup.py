@@ -5,6 +5,8 @@ available attributes and methods of an object:
     Returns a list object
     You are not allowed to import any module
 """
+
+
 def lookup(obj):
     """returns a list of attributes and methods of an object"""
     return dir(obj)
