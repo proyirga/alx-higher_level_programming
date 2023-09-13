@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""Write a function that returns the JSON representation of an object (string):"""
+"""
+Write a function that returns the JSON representation of
+an object (string):
+"""
 import json
 
 
