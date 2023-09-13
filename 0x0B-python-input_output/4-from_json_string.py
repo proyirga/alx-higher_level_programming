@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """
 Function that returns an obj represented by JSON
 """
